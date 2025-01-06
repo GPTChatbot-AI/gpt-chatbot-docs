@@ -1,6 +1,6 @@
 ---
 title: "Update Source Tag"
-api: "POST https://app.gpt-trainer.com/api/v1/source-tag/<uuid>/update"
+api: "POST https://app.gptchatbot.it/api/v1/source-tag/<uuid>/update"
 description: "Update the properties of a source tag, including its list of documents."
 ---
 
@@ -30,7 +30,7 @@ description: "Update the properties of a source tag, including its list of docum
 <RequestExample>
 
 ```bash Curl
-curl --location --request POST 'https://app.gpt-trainer.com/api/v1/source-tag/<uuid>/update' \
+curl --location --request POST 'https://app.gptchatbot.it/api/v1/source-tag/<uuid>/update' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <token>' \
 --data-raw '{
@@ -41,7 +41,7 @@ curl --location --request POST 'https://app.gpt-trainer.com/api/v1/source-tag/<u
 ```py Python
 import requests
 
-url = 'https://app.gpt-trainer.com/api/v1/source-tag/<uuid>/update'
+url = 'https://app.gptchatbot.it/api/v1/source-tag/<uuid>/update'
 headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer <token>'
@@ -64,7 +64,7 @@ else:
 ```ts JavaScript
 const axios = require("axios");
 
-const url = "https://app.gpt-trainer.com/api/v1/source-tag/<uuid>/update";
+const url = "https://app.gptchatbot.it/api/v1/source-tag/<uuid>/update";
 const headers = {
   "Content-Type": "application/json",
   Authorization: "Bearer <token>",

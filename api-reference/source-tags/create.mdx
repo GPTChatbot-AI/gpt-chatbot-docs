@@ -1,6 +1,6 @@
 ---
 title: "Create Source Tag"
-api: "POST https://app.gpt-trainer.com/api/v1/chatbot/<uuid>/source-tag/create"
+api: "POST https://app.gptchatbot.it/api/v1/chatbot/<uuid>/source-tag/create"
 description: "Create a source tag for a chabot. Source tags can be used to organize sources."
 ---
 
@@ -30,7 +30,7 @@ description: "Create a source tag for a chabot. Source tags can be used to organ
 <RequestExample>
 
 ```bash Curl
-curl --location --request POST 'https://app.gpt-trainer.com/api/v1/chatbot/<uuid>/source-tag/create' \
+curl --location --request POST 'https://app.gptchatbot.it/api/v1/chatbot/<uuid>/source-tag/create' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <token>' \
 --data-raw '{
@@ -42,7 +42,7 @@ curl --location --request POST 'https://app.gpt-trainer.com/api/v1/chatbot/<uuid
 ```py Python
 import requests
 
-url = 'https://app.gpt-trainer.com/api/v1/chatbot/<uuid>/source-tag/create'
+url = 'https://app.gptchatbot.it/api/v1/chatbot/<uuid>/source-tag/create'
 headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer <token>'
@@ -67,7 +67,7 @@ else:
 const axios = require("axios");
 
 const url =
-  "https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/source-tags/create";
+  "https://app.gptchatbot.it/api/v1/chatbot/{uuid}/source-tags/create";
 const headers = {
   "Content-Type": "application/json",
   Authorization: "Bearer <token>",

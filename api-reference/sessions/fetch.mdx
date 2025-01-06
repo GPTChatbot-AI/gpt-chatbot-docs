@@ -1,6 +1,6 @@
 ---
 title: "Fetch a Session"
-api: "GET https://app.gpt-trainer.com/api/v1/session/{uuid}"
+api: "GET https://app.gptchatbot.it/api/v1/session/{uuid}"
 description: "Fetch single chatbot session base on uuid"
 ---
 
@@ -28,7 +28,7 @@ description: "Fetch single chatbot session base on uuid"
 <RequestExample>
 
 ```bash Curl
-curl --location --request GET 'https://app.gpt-trainer.com/api/v1/session/{uuid}' \
+curl --location --request GET 'https://app.gptchatbot.it/api/v1/session/{uuid}' \
 --header 'Authorization: Bearer <token>' \
 ```
 
@@ -36,7 +36,7 @@ curl --location --request GET 'https://app.gpt-trainer.com/api/v1/session/{uuid}
 import requests
 
 uuid = '<session-uuid>'
-url = f'https://app.gpt-trainer.com/api/v1/session/{uuid}'
+url = f'https://app.gptchatbot.it/api/v1/session/{uuid}'
 headers = {
     'Authorization': 'Bearer <token>'
 }
@@ -55,7 +55,7 @@ else:
 const axios = require('axios');
 
 const uuid = '<session-uuid>'
-const url = `https://app.gpt-trainer.com/api/v1/session/${uuid}`;
+const url = `https://app.gptchatbot.it/api/v1/session/${uuid}`;
 const headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer <token>'

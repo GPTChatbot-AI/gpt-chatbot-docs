@@ -1,6 +1,6 @@
 ---
 title: "Fetch all Agents"
-api: "GET https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/agents"
+api: "GET https://app.gptchatbot.it/api/v1/chatbot/{uuid}/agents"
 description: "Fetch the list of agents for a chatbot specified by chatbot uuid"
 ---
 
@@ -35,7 +35,7 @@ description: "Fetch the list of agents for a chatbot specified by chatbot uuid"
 <RequestExample>
 
 ```bash Curl
-curl --location --request GET 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/agents' \
+curl --location --request GET 'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/agents' \
 --header 'Authorization: Bearer <token>'
 ```
 
@@ -43,7 +43,7 @@ curl --location --request GET 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}
 import requests
 
 uuid = '<chatbot-uuid>'
-url = f'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/agents'
+url = f'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/agents'
 headers = {
     'Authorization': 'Bearer <token>'
 }
@@ -62,7 +62,7 @@ else:
 const axios = require("axios");
 
 const uuid = "<chatbot-uuid>";
-const url = `https://app.gpt-trainer.com/api/v1/chatbot/${uuid}/agents`;
+const url = `https://app.gptchatbot.it/api/v1/chatbot/${uuid}/agents`;
 const headers = {
   Authorization: "Bearer <token>",
 };

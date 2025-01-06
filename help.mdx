@@ -14,7 +14,7 @@ However, despite how “human” these LLMs may seem, they are far from truly se
 These models should be regarded as “probabilistic conversation simulators” rather than true analytical engines. The governing concept behind these
 models is pattern matching and semantic correlations, not true logic and reasoning.
 
-GPT-trainer is powered by OpenAI’s LLMs. It utilizes Retrieval Augmented Generation (RAG) technology to tune its responses to the data that you upload
+GPT Chatbot is powered by OpenAI’s LLMs. It utilizes Retrieval Augmented Generation (RAG) technology to tune its responses to the data that you upload
 as reference context.
 
 ## What is Retrieval Augmented Generation (RAG)?
@@ -39,7 +39,7 @@ To further illustrate this, we walk you through the following example:
 When you ask a question to ChatGPT, a typical query might look something like:
 
 ```
-What is GPT-trainer?
+What is GPT Chatbot?
 ```
 
 This is a query that relies fully on the semantic patterns within the model’s own foundational training data to generate an answer. There is no guarantee that the answer will be accurate or trustworthy.
@@ -49,11 +49,11 @@ But what if the prompt changes to:
 ```
 Answer the question below using the following provided context:
 
-GPT-trainer is a powerful no-code/low-code framework that allows you to build
+GPT Chatbot is a powerful no-code/low-code framework that allows you to build
 multi-agent chatbots with function-calling capabilities using your own data. It is designed to be user-friendly
 and versatile, providing customization options and integration with popular platforms.
 
-What is GPT-trainer?
+What is GPT Chatbot?
 ```
 
 Now, the model has a lot more to work with. In fact, the semantic patterns identified in the prompt itself can closely guide the model when answering
@@ -68,7 +68,7 @@ every time I ask a question?
 Well, if the LLM is large enough to take in so many tokens (words) as input all at once, then sure, it’s perfectly viable to do so, provided you can afford the costs.
 
 However, we use OpenAI's large language models (LLMs), all of which have token limits. The token limit dictates how much "effective content"
-can be used as context. For GPT-trainer's chat, we can fit about 10,000 words using the gpt-3.5-16k model.
+can be used as context. For GPT Chatbot's chat, we can fit about 10,000 words using the gpt-3.5-16k model.
 
 The chatbot sits on top of many documents that, altogether, usually contain far more than 10,000 words. This means that we cannot fit everything
 into the token limit all the time.
@@ -87,13 +87,13 @@ Afterwards, the top chunks get included as context and injected into the user’
 Generation (RAG). Remember our example from earlier? When the user asks:
 
 ```
-What is GPT-trainer?
+What is GPT Chatbot?
 ```
 
 the most relevant chunk that will likely be pulled from our vector database is:
 
 ```
-GPT-trainer is a powerful no-code/low-code framework that allows you to build multi-agent chatbots with function-calling
+GPT Chatbot is a powerful no-code/low-code framework that allows you to build multi-agent chatbots with function-calling
 capabilities using your own data. It is designed to be user-friendly and versatile, providing customization options and
 integration with popular platforms.
 ```

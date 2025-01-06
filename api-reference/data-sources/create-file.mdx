@@ -1,6 +1,6 @@
 ---
 title: "Upload a File"
-api: "POST https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/data-source/upload"
+api: "POST https://app.gptchatbot.it/api/v1/chatbot/{uuid}/data-source/upload"
 description: "Create a File source for a chatbot specified by chatbot uuid"
 ---
 
@@ -30,7 +30,7 @@ description: "Create a File source for a chatbot specified by chatbot uuid"
 
 ```bash Curl
 curl -X POST -F "file=@{file_path}" 'meta_json="{\"reference_source_link\": \"{reference_source_link}\"}
-"' https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/data-source/upload \
+"' https://app.gptchatbot.it/api/v1/chatbot/{uuid}/data-source/upload \
 --header 'Authorization: Bearer <token>' \
 ```
 
@@ -40,7 +40,7 @@ import os
 
 file_path = '{file_path}'
 
-api_url = 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/data-source/upload'
+api_url = 'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/data-source/upload'
 
 headers = {
     "Authorization": "Bearer <token>"
@@ -68,7 +68,7 @@ const axios = require("axios");
 
 const filePath = "{file_path}";
 const apiUrl =
-  "https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/data-source/upload";
+  "https://app.gptchatbot.it/api/v1/chatbot/{uuid}/data-source/upload";
 
 const fileName = filePath.split("/").pop();
 

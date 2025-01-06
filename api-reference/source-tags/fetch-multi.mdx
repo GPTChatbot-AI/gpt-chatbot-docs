@@ -1,6 +1,6 @@
 ---
 title: "Fetch all Source Tags"
-api: "GET https://app.gpt-trainer.com/api/v1/chatbot/<uuid>/source-tags"
+api: "GET https://app.gptchatbot.it/api/v1/chatbot/<uuid>/source-tags"
 description: "List all source tags for a chabot."
 ---
 
@@ -24,7 +24,7 @@ description: "List all source tags for a chabot."
 
 <RequestExample>
 ```bash Curl
-curl --location --request GET 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/source-tags' \
+curl --location --request GET 'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/source-tags' \
 --header 'Authorization: Bearer <token>'
 ```
 
@@ -32,7 +32,7 @@ curl --location --request GET 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}
 import requests
 
 uuid = '<chatbot-uuid>'
-url = f'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/source-tags'
+url = f'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/source-tags'
 headers = {
     'Authorization': 'Bearer <token>'
 }
@@ -51,7 +51,7 @@ else:
 const axios = require("axios");
 
 const uuid = "<chatbot-uuid>";
-const url = `https://app.gpt-trainer.com/api/v1/chatbot/${uuid}/source-tags`;
+const url = `https://app.gptchatbot.it/api/v1/chatbot/${uuid}/source-tags`;
 const headers = {
   Authorization: "Bearer <token>",
 };

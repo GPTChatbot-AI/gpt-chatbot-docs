@@ -22,7 +22,7 @@ This means that even if your original document has a long chapter of text that t
 
 So how can we divide up the document with minimal alterations to its original meaning?
 
-Unfortunately there is no universal solution. This is still an ongoing field of scientific research. GPT-trainer uses a combination of rule-based and statistical
+Unfortunately there is no universal solution. This is still an ongoing field of scientific research. GPT Chatbot uses a combination of rule-based and statistical
 relevance algorithms to divide training data into chunks, but we cannot always guarantee each chunk is self-contained, clean, and accurate. Fortunately, LLMs
 specialize in working with unstructured text, and they have high tolerances for badly formatted input when producing responses.
 
@@ -34,18 +34,6 @@ none of this can be guaranteed when chunks are initially extracted from uploaded
 
 This error is especially pronounced when working with websites. Since web browsers render websites very differently from how web scraper sees them, what
 you see can be very different from what our scraper captures. Furthermore, most layout information and data residing in images / illustrations / videos are lost during the scraping process.
-
-<Frame>
-  <img src="/images/best-practices-1.png" />
-</Frame>
-
-_GPT-trainer’s own pricing table on https://gpt-trainer.com/pricing as rendered via the Chrome browser._
-
-<Frame>
-  <img src="/images/best-practices-2.png" />
-</Frame>
-
-_The same website content, after our scraper captures it and associated chunking has been done._
 
 ## No gaps, no overlaps
 

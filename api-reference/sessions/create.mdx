@@ -1,6 +1,6 @@
 ---
 title: "Create Session"
-api: "POST https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/session/create"
+api: "POST https://app.gptchatbot.it/api/v1/chatbot/{uuid}/session/create"
 description: "Create a chat session for a chatbot specified by chatbot uuid"
 ---
 
@@ -25,7 +25,7 @@ description: "Create a chat session for a chatbot specified by chatbot uuid"
 <RequestExample>
 
 ```bash Curl
-curl --location --request POST 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/session/create' \
+curl --location --request POST 'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/session/create' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <token>' \
 ```
@@ -34,7 +34,7 @@ curl --location --request POST 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid
 import requests
 
 uuid = '<chatbot-uuid>'
-url = f'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/session/create'
+url = f'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/session/create'
 headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer <token>'
@@ -54,7 +54,7 @@ else:
 const axios = require("axios");
 
 const uuid = "<chatbot-uuid>";
-const url = `https://app.gpt-trainer.com/api/v1/chatbot/${uuid}/session/create`;
+const url = `https://app.gptchatbot.it/api/v1/chatbot/${uuid}/session/create`;
 const headers = {
   "Content-Type": "application/json",
   Authorization: "Bearer <token>",

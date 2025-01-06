@@ -3,9 +3,9 @@ title: RAG from an External Data Provider
 ---
 
 Uploading static sources as training data for your AI Agents is well and good, but what if your database is huge, structured, externally-hosted, 
-or updated in real-time? There is no way to dump the entire database into GPT-trainer’s static knowledge library and still maintain a live link…
+or updated in real-time? There is no way to dump the entire database into GPT Chatbot’s static knowledge library and still maintain a live link…
 
-This is where function-calling comes in. Through function-calling, you can serve data on-demand to your AI Agent in GPT-trainer during a live 
+This is where function-calling comes in. Through function-calling, you can serve data on-demand to your AI Agent in GPT Chatbot during a live
 conversation session. To show you how, we walk you through an example of RAG enrichment using (abstracts of) academic papers sourced from a trusted 
 academic papers aggregator: Semantic Scholar API.
 
@@ -132,7 +132,7 @@ We ran our own analysis for this particular API endpoint (with the specific set 
 result is between 400-500 tokens long. This means that depending on the token limit we reserved for the function output, we can only fit so many search results 
 in before running out of space. Keep this in mind as you prioritize the information you wish to supply to the LLM during RAG.
 
-Now we know what the LLM would see as additional context provided by the function call, we can start linking it to our GPT-trainer Agent.
+Now we know what the LLM would see as additional context provided by the function call, we can start linking it to our GPT Chatbot Agent.
 
 <Note>
 It is ALWAYS advisable to write your own script and test for the output of the API endpoint first. You want to know exactly what kind information 
@@ -141,7 +141,7 @@ is being fed into your AI Agent.
 
 ## Create and prepare the AI Agent
 
-In your chatbot inside GPT-trainer, you must first create an appropriate AI Agent that you plan to give this function-calling capability to. In our example, 
+In your chatbot inside GPT Chatbot, you must first create an appropriate AI Agent that you plan to give this function-calling capability to. In our example,
 we created “The Professor”. We then defined an associated Agent description and base prompt.
 
 <Frame>
@@ -334,4 +334,4 @@ called during the LLM response:
 </Frame>
 
 Just like that, you equipped your AI Agent with on-demand information from an external data provider. In the future, we will also write a guide that helps you 
-implement and host your own database search function that then gets integrated with GPT-trainer.
+implement and host your own database search function that then gets integrated with GPT Chatbot.

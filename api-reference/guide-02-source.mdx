@@ -2,18 +2,18 @@
 title: Uploading Data Sources
 ---
 
-In this guide, we will walk through the process of uploading data sources to your chatbot using the GPT-trainer API.
+In this guide, we will walk through the process of uploading data sources to your chatbot using the GPT Chatbot API.
 
 ## Prerequisites
 
 Before you begin, make sure you have the following:
 
-- An API key for accessing the GPT-trainer API.
+- An API key for accessing the GPT Chatbot API.
 - A development environment or tool for making HTTP requests, such as Curl or a programming language like Python.
 
 ## API Endpoint
 
-The API endpoint for uploading data sources to your chatbot is: `https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/data-source/url`.
+The API endpoint for uploading data sources to your chatbot is: `https://app.gptchatbot.it/api/v1/chatbot/{uuid}/data-source/url`.
 
 <Warning>Make sure to replace `{uuid}` with the UUID of your chatbot..</Warning>
 
@@ -31,14 +31,14 @@ To upload a data source, you need to send a POST request to the API endpoint wit
 
 ## Example Request
 
-Here're example command sto create a chatbot using the GPT-trainer API:
+Here're example command sto create a chatbot using the GPT Chatbot API:
 
 <Warning>Replace **token** with your actual API key.</Warning>
 
 <CodeGroup>
 
 ```bash Curl
-curl --location --request POST 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/data-source/url' \
+curl --location --request POST 'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/data-source/url' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <token>' \
 --data-raw '{
@@ -49,7 +49,7 @@ curl --location --request POST 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid
 ```py Python
 import requests
 
-url = 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/data-source/url'
+url = 'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/data-source/url'
 headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer <token>'
@@ -76,7 +76,7 @@ else:
 ```ts JavaScript
 const axios = require('axios');
 
-const url = 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/data-source/url';
+const url = 'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/data-source/url';
 const headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer <token>'
@@ -102,4 +102,4 @@ axios.post(url, data, { headers, params })
 
 </CodeGroup>
 
-That's it! You've now learned how to upload data sources to your chatbot using the GPT-trainer API.
+That's it! You've now learned how to upload data sources to your chatbot using the GPT Chatbot API.

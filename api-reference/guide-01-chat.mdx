@@ -2,12 +2,12 @@
 title: Chat with Chatbot
 ---
 
-In this section, we will guide you on how to start chatting with your chatbot using the GPT-trainer API.
+In this section, we will guide you on how to start chatting with your chatbot using the GPT Chatbot API.
 Before you begin, please ensure you meet the following prerequisites:
 
 ## Prerequisites
 
-- An API key for accessing the GPT-trainer API.
+- An API key for accessing the GPT Chatbot API.
 - A development environment or tool for making HTTP requests, such as Curl or a programming language like Python.
 
 <Note>
@@ -29,7 +29,7 @@ Before sending messages to the chatbot, it's essential to create a chat session.
 
 ### Create a chat session
 
-To create a chat session, you need to use a POST request to the API endpoint: `https://app.gpt-trainer.com/api/v1/chatbot/{chatbot_uuid}/session/create`.
+To create a chat session, you need to use a POST request to the API endpoint: `https://app.gptchatbot.it/api/v1/chatbot/{chatbot_uuid}/session/create`.
 
 <Warning>
   Make sure to replace `{chatbot_uuid}` with the UUID of your chatbot.
@@ -37,14 +37,14 @@ To create a chat session, you need to use a POST request to the API endpoint: `h
 
 ### Example Request
 
-Here're example command to create a chatbot using the GPT-trainer API:
+Here're example command to create a chatbot using the GPT Chatbot API:
 
 <Warning>Replace **token** with your actual API key.</Warning>
 
 <CodeGroup>
 
 ```bash Curl
-curl --location --request POST 'https://app.gpt-trainer.com/api/v1/chatbot/{chatbot_uuid}/session/create' \
+curl --location --request POST 'https://app.gptchatbot.it/api/v1/chatbot/{chatbot_uuid}/session/create' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <token>' \
 ```
@@ -52,7 +52,7 @@ curl --location --request POST 'https://app.gpt-trainer.com/api/v1/chatbot/{chat
 ```py Python
 import requests
 
-url = 'https://app.gpt-trainer.com/api/v1/chatbot/{chatbot_uuid}/session/create'
+url = 'https://app.gptchatbot.it/api/v1/chatbot/{chatbot_uuid}/session/create'
 headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer <token>'
@@ -73,7 +73,7 @@ else:
 const axios = require("axios");
 
 const url =
-  "https://app.gpt-trainer.com/api/v1/chatbot/{chatbot_uuid}/session/create";
+  "https://app.gptchatbot.it/api/v1/chatbot/{chatbot_uuid}/session/create";
 const headers = {
   "Content-Type": "application/json",
   Authorization: "Bearer <token>",
@@ -113,7 +113,7 @@ This API request returns JSON data that you can reuse to send messages:
 
 With a chat session created, you can now send messages to your chatbot.
 Use the following API endpoint to send messages and get a streamed AI response:\
-`https://app.gpt-trainer.com/api/v1/session/{session_uuid}/message/stream`
+`https://app.gptchatbot.it/api/v1/session/{session_uuid}/message/stream`
 
 <Warning>
   Make sure to replace `{session_uuid}` with the `uuid` obtained from the chat
@@ -122,13 +122,13 @@ Use the following API endpoint to send messages and get a streamed AI response:\
 
 ### Example Request
 
-Here're example command to create a message using the GPT-trainer API:
+Here're example command to create a message using the GPT Chatbot API:
 
 <Warning>Replace **token** with your actual API key.</Warning>
 
 <CodeGroup>
     ```bash Curl
-curl --location --request POST 'https://app.gpt-trainer.com/api/v1/session/{session_uuid}/message/stream' \
+curl --location --request POST 'https://app.gptchatbot.it/api/v1/session/{session_uuid}/message/stream' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{"query": "Your query goes here"}'
@@ -137,7 +137,7 @@ curl --location --request POST 'https://app.gpt-trainer.com/api/v1/session/{sess
 ```py Python
 import requests
 
-url = f"https://app.gpt-trainer.com/api/v1/session/{session_uuid}/message/stream"
+url = f"https://app.gptchatbot.it/api/v1/session/{session_uuid}/message/stream"
 headers = {
     "Authorization": "Bearer YOUR_ACCESS_TOKEN",
     "Content-Type": "application/json"
@@ -161,7 +161,7 @@ else:
 const xhr = new XMLHttpRequest();
 xhr.open(
   "POST",
-  `https://app.gpt-trainer.com/api/v1/session/{session_uuid}/message/stream`,
+  `https://app.gptchatbot.it/api/v1/session/{session_uuid}/message/stream`,
   true
 );
 
@@ -190,4 +190,4 @@ xhr.onreadystatechange = () => {
 
 </CodeGroup>
 
-That's it! You've now learned how to chat with your own chatbot using the GPT-trainer API.
+That's it! You've now learned how to chat with your own chatbot using the GPT Chatbot API.

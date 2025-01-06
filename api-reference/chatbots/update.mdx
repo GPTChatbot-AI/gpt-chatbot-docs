@@ -1,6 +1,6 @@
 ---
 title: "Update Chatbot"
-api: "POST https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/update"
+api: "POST https://app.gptchatbot.it/api/v1/chatbot/{uuid}/update"
 description: "Update chatbot meta base on uuid"
 ---
 
@@ -36,7 +36,7 @@ description: "Update chatbot meta base on uuid"
 <RequestExample>
 
 ```bash Curl
-curl --location --request POST 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/update' \
+curl --location --request POST 'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/update' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <token>' \
 --data-raw '{
@@ -55,7 +55,7 @@ curl --location --request POST 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid
 import requests
 
 uuid = '<chatbot-uuid>'
-url = f'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/update'
+url = f'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/update'
 headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer <token>'
@@ -83,7 +83,7 @@ else:
 const axios = require("axios");
 
 const uuid = "<chatbot-uuid>";
-const url = `https://app.gpt-trainer.com/api/v1/chatbot/${uuid}/update`;
+const url = `https://app.gptchatbot.it/api/v1/chatbot/${uuid}/update`;
 const headers = {
   "Content-Type": "application/json",
   Authorization: "Bearer <token>",

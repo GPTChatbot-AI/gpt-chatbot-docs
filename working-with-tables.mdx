@@ -2,7 +2,7 @@
 title: Working with Tables and CSV
 ---
 
-GPT-trainer allows you to upload training data in the form of **simple** CSV or Excel tables. 
+GPT Chatbot allows you to upload training data in the form of **simple** CSV or Excel tables.
 Simple tables refer to tabulated data that do not contain merged cells, have a single primary 
 key column with unique elements, unique and informative column / row titles, and either 
 column-wise or row-column structural configurations.
@@ -29,7 +29,7 @@ As of March 2024, the maximum number of tokens per row is ~8000 tokens (this num
 JSON code used to represent table structure, so actual maximum reserved for cell-values is lower 
 and depends on column / row name lengths).
 
-If your data matches the format above, you can proceed to upload your table onto GPT-trainer as a 
+If your data matches the format above, you can proceed to upload your table onto GPT Chatbot as a
 training source. To do so, simply go to Sources -> Add Sources -> Tables:
 
 <Frame>
@@ -80,15 +80,15 @@ numerous programmatic representations of structured data are discussed.
 _Comparing GPT-3.5 vs. GPT-4 performance across a variety of table operations and structured data representations._
 _Source: https://www.microsoft.com/en-us/research/blog/improving-llm-understanding-of-structured-data-and-exploring-advanced-prompting-methods/_
 
-GPT-trainer currently uses a version of JSON to handle tables. While not perfect, it does support a limited range 
+GPT Chatbot currently uses a version of JSON to handle tables. While not perfect, it does support a limited range
 of use cases when bot makers want to train chatbots with structured data.
 
 We understand that many use cases involve much larger and more complex datasets that may even be updated in real-time. 
-The static table feature within GPT-trainer is not optimized for them, and we instead recommend that you look into 
+The static table feature within GPT Chatbot is not optimized for them, and we instead recommend that you look into
 function-calling.
 
 The most robust and "legitimate" way to do retrieval augmented generation (RAG) on structured data is via function calling, 
 where you design and host custom functions with **templated** SQL queries to retrieve specific data snippets and feed it to 
-your GPT-trainer chatbot as additional RAG context on-demand. However, this requires a bit of programming and server hosting 
+your GPT Chatbot chatbot as additional RAG context on-demand. However, this requires a bit of programming and server hosting
 setup on your end. We are working on some concrete examples of this setup, so we appreciate your patience as we improve our 
 documentation.

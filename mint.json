@@ -1,5 +1,5 @@
 {
-  "name": "GPT-trainer API",
+  "name": "GPT Chatbot API",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -20,7 +20,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hello@gpt-trainer.com"
+      "url": "mailto:info@gptchatbot.it"
     }
   ],
   "primaryTab": {
@@ -36,18 +36,13 @@
       "name": "Tools",
       "icon": "gear",
       "api": {
-        "baseUrl": "https://tools.gpt-trainer.com/",
+        "baseUrl": "https://tools.gptchatbot.it/",
         "auth": {
           "method": "bearer"
         }
       },
       "url": "tools"
     },
-    {
-      "name": "Whitelabel",
-      "icon": "browser",
-      "url": "whitelabel"
-    }
   ],
   "navigation": [
     {
@@ -160,26 +155,10 @@
     {
       "group": "Tools",
       "pages": ["tools/weekday"]
-    },
-    {
-      "group": "Whitelabel Dashboard",
-      "pages": [
-        "whitelabel/whitelabel-intro",
-        "whitelabel/whitelabel-plans",
-        "whitelabel/whitelabel-users"
-      ]
-    },
-    {
-      "group": "Integrations",
-      "pages": [
-        "whitelabel/whitelabel-zapier",
-        "whitelabel/whitelabel-make",
-        "whitelabel/whitelabel-meta"
-      ]
     }
   ],
   "api": {
-    "baseUrl": "https://app.gpt-trainer.com/api",
+    "baseUrl": "https://app.gptchatbot.it/api",
     "auth": {
       "method": "bearer"
     }

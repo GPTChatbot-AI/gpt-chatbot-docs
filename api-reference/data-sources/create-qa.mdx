@@ -1,6 +1,6 @@
 ---
 title: "Create QA Source"
-api: "POST https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/data-source/qa"
+api: "POST https://app.gptchatbot.it/api/v1/chatbot/{uuid}/data-source/qa"
 description: "Create a QA source for a chatbot specified by chatbot uuid"
 ---
 
@@ -30,7 +30,7 @@ description: "Create a QA source for a chatbot specified by chatbot uuid"
 <RequestExample>
 
 ```bash Curl
-curl --location --request POST 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/data-source/qa' \
+curl --location --request POST 'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/data-source/qa' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <token>' \
 --data-raw '{
@@ -43,7 +43,7 @@ curl --location --request POST 'https://app.gpt-trainer.com/api/v1/chatbot/{uuid
 import requests
 
 uuid = '<chatbot-uuid>'
-url = f'https://app.gpt-trainer.com/api/v1/chatbot/{uuid}/data-source/qa'
+url = f'https://app.gptchatbot.it/api/v1/chatbot/{uuid}/data-source/qa'
 headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer <token>'
@@ -68,7 +68,7 @@ else:
 const axios = require("axios");
 
 const uuid = "<chatbot-uuid>";
-const url = `https://app.gpt-trainer.com/api/v1/chatbot/${uuid}/data-source/qa`;
+const url = `https://app.gptchatbot.it/api/v1/chatbot/${uuid}/data-source/qa`;
 const headers = {
   "Content-Type": "application/json",
   Authorization: "Bearer <token>",

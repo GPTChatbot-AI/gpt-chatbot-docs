@@ -1,6 +1,6 @@
 ---
 title: "Delete multiple Sources"
-api: "POST https://app.gpt-trainer.com/api/v1/data-sources/delete"
+api: "POST https://app.gptchatbot.it/api/v1/data-sources/delete"
 description: "Delete list of sources base on their uuids"
 ---
 
@@ -18,7 +18,7 @@ description: "Delete list of sources base on their uuids"
 <RequestExample>
 
 ```bash Curl
-curl --location --request POST 'https://app.gpt-trainer.com/api/v1/data-sources/delete' \
+curl --location --request POST 'https://app.gptchatbot.it/api/v1/data-sources/delete' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <token>'
 --data-raw '{
@@ -29,7 +29,7 @@ curl --location --request POST 'https://app.gpt-trainer.com/api/v1/data-sources/
 ```py Python
 import requests
 
-url = 'https://app.gpt-trainer.com/api/v1/data-sources/delete'
+url = 'https://app.gptchatbot.it/api/v1/data-sources/delete'
 headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer <token>'
@@ -51,7 +51,7 @@ else:
 ```ts JavaScript
 const axios = require('axios');
 
-const url = 'https://app.gpt-trainer.com/api/v1/data-sources/delete';
+const url = 'https://app.gptchatbot.it/api/v1/data-sources/delete';
 const headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer <token>'
